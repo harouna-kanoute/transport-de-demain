@@ -1,0 +1,411 @@
+/*----------------------------------General-------------------------------*/
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p{
+  font-size: 20px;
+  line-height: 40px;
+  text-align: justify;
+  font-weight: normal;
+  padding: 20px;
+}
+h2{
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 20px;
+}
+/*----------------------------------General-------------------------------*/
+
+/*----------------------------------header--------------------------------*/
+
+#header{
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding:0px;
+  margin:0px;
+  position: fixed;
+  width: 100%;
+  background-color: #ecf0f1;
+  z-index:1000;
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+.header-logo{
+  margin-right: 2em;
+  width: 60px;
+  height: 70px;
+}
+
+.header-menu a{
+  text-decoration: none;
+  margin-right:1.5em;
+  padding: 10px;
+  color: #3c6382;
+  font-family: 'Muli',sans-serif, 'Arial',sans-serif;
+  font-size: 1.4em;
+}
+.header-menu a:hover{
+  color:red;
+}
+
+.header-image{
+  background-image: url('images/homepage.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  width: 100%;
+  height: 800px;
+}
+
+@media screen and (max-width:600px){
+
+  #header{
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0px;
+    margin:0px;
+    width: 100%;
+    background-color: #30336b;
+    box-shadow: 0px 0px 10px 0px black;
+    position: relative;
+  }
+
+  .header-logo{
+    margin-right: 2em;
+    width: 60px;
+    height: 70px;
+  }
+
+  .header-menu a{
+    text-decoration: none;
+    margin-right:1em;
+    padding: 10px;
+    color: white;
+    font-family: 'Muli',sans-serif, 'Arial',sans-serif;
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  .header-menu a:hover{
+    color:#f9ca24;
+  }
+
+  .header-image{
+    background-image: url('images/homepage.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    margin-top: 0px;
+  }
+
+}
+/*-----------------------------------------header---------------------------------*/
+
+
+/*---------------------------------------introduction-----------------------------*/
+.introduction{
+  width: 100%;
+  height: 100vh;
+}
+
+.introduction .introduction-block{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./images/letraitredutexas.jpg');
+  background-color: rgba(236, 240, 241,0.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin-top: 20px;
+}
+.introduction P{
+  text-align: justify;
+  width: 60%;
+  margin: auto;
+  padding: 0px 80px;
+  font-size: 1.5em;
+  
+  background-color: white;
+  font-family: 'Muli',sans-serif, 'Arial',sans-serif;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width:600px){
+  .introduction{
+    width: 100%;
+    height: 1000px;
+  }
+
+  .introduction .introduction-block{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/letraitredutexas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  .introduction P{
+    text-align: justify;
+    width: 80%;
+    font-size: 1em;
+    background-color: white;
+    font-family: 'Muli',sans-serif, 'Arial',sans-serif;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+/*-----------------------------------------introduction-----------------------------------*/
+
+/*--------------------------------------------taxi----------------------------------------*/
+#container-taxi{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+}
+.block-taxi{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px;
+}
+.block-taxi img{
+  width: 100%;
+  height: 300px;
+}
+.block-taxi div{
+  width: 100%;
+  background: antiquewhite;
+  height: 400px;
+}
+
+/*----------------------------------------taxi-------------------------------------*/
+
+/*les avions*/
+#container-avions{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.avion-modulaire{
+  height:400px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+
+
+}
+
+.avion-modulaire p{
+  font-family: 'Muli',sans-serif, 'Arial',sans-serif;
+  font-size: 2em;
+  display: flex;
+  justify-content:center;
+  align-items: flex-end;
+  text-align: center;
+}
+.avion-modulaire h1{
+    font-family: 'Muli',sans-serif, 'Arial',sans-serif;
+    font-size:3em;
+
+}
+.container-helico{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+.helicoptere-bell{
+  background-color: #74b9ff;
+}
+.helicoptere-bell h1{
+  font-family: 'Muli',sans-serif, 'Arial',sans-serif;
+  font-size: 4em;
+  text-align: center;
+  margin: 0px;
+  padding:0px;
+}
+.block1{
+  background-color: white;
+  width: 100%;
+  height: 10px;
+  margin: 0px;
+}
+.block2{
+  background-color: white;
+  width: 100%;
+  height: 10px;
+  margin-top: 10px;
+}
+.helicoptere-bell p{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7em;
+  color: white;
+  font-family: 'Muli',sans-serif, 'Arial',sans-serif;
+}
+/*les avions*/
+
+/*les trains*/
+.hyperloop{
+  display: flex;
+  padding: 100px;
+}
+.hyperloop-text{
+  position: absolute;
+  width: 40%;
+  margin: 155px 0px 430px 700px;
+  font-size: 2em;
+  font-family: 'Muli',sans-serif, 'Arial',sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 30px;
+}
+.hyperloop-text h1{
+  text-transform: capitalize;
+  font-family: 'Muli',sans-serif, 'Arial',sans-serif;
+}
+.hyperloop-text p{
+  font-family: 'Muli',sans-serif, 'Arial',sans-serif;
+}
+
+.metro-jumeaux {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px;
+}
+
+.metro-jumeaux-image img{
+
+
+}
+.metro-jumeaux-text{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.metro-jumeaux-text h1{
+  font-size: 4em;
+  font-family: 'Muli',sans-serif, 'Arial',sans-serif;
+}
+.metro-jumeaux-text p{
+  font-size: 2em;
+  font-family: 'Muli',sans-serif, 'Arial',sans-serif;
+}
+
+/*les trains*/
+
+/*contact*/
+#contact{
+  text-align: center;
+  font-family: 'Muli',sans-serif, 'Arial',sans-serif;
+  text-decoration: underline;
+}
+
+form {
+  margin: 0 auto;
+  width: 600px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  background-color: #ecf0f1;
+  font-family: 'Muli',sans-serif, 'Arial',sans-serif;
+}
+
+form div + div {
+  margin-top: 2em;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+
+input, textarea {
+
+  font: 1em 'Muli',sans-serif, 'Arial',sans-serif;
+  width: 450px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.button {
+  padding-left: 90px;
+}
+
+button {
+  margin-left: .5em;
+}
+
+/*contact*/
+
+/*footer*/
+.container4{
+  background-color: #ecf0f1;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 0px;
+}
+
+.container4 .socio a img{
+  height: 30px;
+  width: 30px;
+  margin-bottom: 25px;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+span{
+  margin-bottom: 35px;
+  font-family: 'Muli',sans-serif, 'Arial',sans-serif;
+}
+/*footer*/
